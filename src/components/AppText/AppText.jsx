@@ -5,7 +5,7 @@ import Styles from "../../config/styles";
 export default function AppText({ children }) {
   return (
     <View>
-      <Text style={Styles.text4}>{children}</Text>
+      <Text style={Styles.text}> {children} </Text>
     </View>
   );
 }

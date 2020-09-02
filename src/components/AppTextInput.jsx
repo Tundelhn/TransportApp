@@ -5,7 +5,11 @@ import Styles from "../config/styles";
 export default function AppTextInpout({ ...otherProps }) {
   return (
     <View>
-      <TextInput style={Styles.textInput} {...otherProps} />
+      <TextInput
+        style={Styles.textInput}
+        {...otherProps}
+        keyboardType="numeric"
+      />
     </View>
   );
 }
