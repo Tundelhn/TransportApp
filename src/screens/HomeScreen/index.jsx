@@ -4,7 +4,7 @@ import { View, Text } from 'react-native'
 export default function index() {
     return (
         <View>
-            <Text>Welcome home</Text>
+            <Text>Welcome homescreen</Text>
         </View>
     )
 }
