@@ -11,7 +11,7 @@ import AppButton from "../components/AppButton";
 import Styles from "../config/styles";
 export default function SignupScreen({ color = "primary" }) {
   return (
-    <View>
+    <View style={styles.container}>
       <ImageBackground
         source={require("../../assets/drivers-bg.jpg")}
         style={Styles.image}
