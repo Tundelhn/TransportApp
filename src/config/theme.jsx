@@ -3,5 +3,6 @@ export default {
   secondary: "#4ecdc4",
   black: "#000",
   white: "#fff",
-  button: "#0A84FF"
+  button: "#0A84FF",
+  dark: "#253855"
 };
