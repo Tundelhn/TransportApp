@@ -1,14 +1,19 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-
-import RegisterScreen from "./src/screens/RegisterScreen";
 import InputComponent from "./src/components/Textinput";
 import AppButton from "./src/components/AppButton";
+import Mobile from "./src/screens/MobileAuthScreen";
+import SignupScreen from "./src/screens/SignupScreen";
 
 export default function App() {
-  return (
-    <View>
-      <InputComponent placeholder="Enter First name" />
+  return <SignupScreen />;
+}
+
+const styles = StyleSheet.create({});
+
+// <View>
+{
+  /* <InputComponent placeholder="Enter First name" />
       <InputComponent placeholder=" Enter your Lastname" />
       <InputComponent placeholder="Enter your Email Address" />
       <InputComponent placeholder="Mpbile Phone Number" />
@@ -18,9 +23,7 @@ export default function App() {
         <View style={{ alignItems: "center", width: "100%" }}>
           <Text>Already Have an Account ?</Text>
         </View>
-      </View>
-    </View>
-  );
+      </View> */
 }
 
-const styles = StyleSheet.create({});
+// </View>
