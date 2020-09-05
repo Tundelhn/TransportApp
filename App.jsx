@@ -1,23 +1,14 @@
-import {
-  StatusBar
-} from "expo-status-bar";
+import { StatusBar } from "expo-status-bar";
 import React from "react";
-import {
-  StyleSheet,
-  Text,
-  View
-} from "react-native";
-import AppButton from "./src/components/AppButton";
-import MobileAuthScreen from "./src/screens/MobileAuthScreen";
+import { StyleSheet, Text, View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import AuthStack from "./src/navigation/AuthNavigator/AuthNav";
 export default function App() {
-  return <MobileAuthScreen / > ;
+  return (
+    <NavigationContainer>
+      <AuthStack />
+    </NavigationContainer>
+  );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+const styles = StyleSheet.create({});

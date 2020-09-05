@@ -1,18 +1,27 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import AppButton from "../components/AppButton";
+import AppTextInput from "../components/AppTextInput";
+import AppText from "../components/AppText";
+import Styles from "../config/styles";
 
-export default function MobileAuthScreen() {
+export default function MobileAuthScreen({ navigation }) {
   return (
-    <View style={styles.container}>
-      <AppButton title="submit" color="secondary" />
+    <View>
+      <Text style={Styles.textstyle}>Enter Your Number</Text>
+      <AppText>We will send a code to verify your number</AppText>
+      <AppTextInput />
+      <AppButton
+        title="submit"
+        color="blue"
+        onPress={() => navigation.navigate("code")}
+      />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     justifyContent: "flex-end",
     alignItems: "center",
   },
