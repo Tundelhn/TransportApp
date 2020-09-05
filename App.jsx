@@ -9,8 +9,12 @@ import {
 } from "react-native";
 import AppButton from "./src/components/AppButton";
 import MobileAuthScreen from "./src/screens/MobileAuthScreen";
+import WelcomeScreen from "./src/screens/WelcomeScreen";
+import MapScreen from "./src/screens/MapScreen";
+//import {H} from "./src/screens/HomeScreen";
+
 export default function App() {
-  return <MobileAuthScreen / > ;
+  return <MapScreen /> ;
 }
 
 const styles = StyleSheet.create({
