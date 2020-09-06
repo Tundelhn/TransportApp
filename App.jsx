@@ -11,10 +11,11 @@ import AppButton from "./src/components/AppButton";
 import MobileAuthScreen from "./src/screens/MobileAuthScreen";
 import WelcomeScreen from "./src/screens/WelcomeScreen";
 import MapScreen from "./src/screens/MapScreen";
+import DestinationScreen from "./src/screens/DestinationScreen";
 //import {H} from "./src/screens/HomeScreen";
 
 export default function App() {
-  return <MapScreen /> ;
+  return <DestinationScreen /> ;
 }
 
 const styles = StyleSheet.create({

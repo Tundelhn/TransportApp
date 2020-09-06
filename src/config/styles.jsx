@@ -11,6 +11,17 @@ const styles = StyleSheet.create({
     color: colors.gray,
     fontSize: 15
   },
+  booking:{
+    flexDirection: 'row',
+    justifyContent: "center",
+    alignContent:'center',
+    marginTop: 190,
+  },
+  bus:{
+    fontWeight:'400', 
+    fontSize: 16,
+    paddingLeft:5
+  },
   customBtn: {
     fontSize: 20,
     fontWeight: '400',
@@ -50,6 +61,23 @@ customText:{
     height: 5,
     borderRadius: 5
     },
+    Icon1: {
+    flexDirection: 'row',
+    justifyContent: "center",
+    marginTop: 13,
+    height: 5,
+    borderRadius: 5,
+    left: 9
+    },
+    Icon2: {
+    flexDirection: 'row',
+    justifyContent: "center",
+    alignContent:'center',
+    marginTop: -25,
+    height: 5,
+    borderRadius: 5,
+    left: 10
+    },
     Img: {
       marginTop: 50,
       flexDirection: 'row',
@@ -61,7 +89,7 @@ customText:{
     },
     homes:{
       paddingLeft: 20,
-      paddingTop: 1,
+      paddingTop: 5,
       color: colors.gray,
       fontSize: 15
     },

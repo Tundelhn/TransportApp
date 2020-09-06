@@ -1,16 +1,19 @@
 import React from "react";
 import { StyleSheet, Text, View, TextInput, Image, TouchableOpacity } from "react-native";
 import Styles from "../config/styles";
+import theme from "../config/theme";
 
-export default function InText() {
+
+export default function InText({placeholder, image, size}) {
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.SectionStyle}>
-        <Image source={require("../../assets/search.png")}  style={styles.ImageStyle} />
+        <Image source={image}  style={styles.ImageStyle} />
         <TextInput
                 style={styles.text}
-                placeholder="Enter Your Name Here"
-                underlineColorAndroid="transparent"
+                placeholder={placeholder}
+                size={size}
+                //underlineColorAndroid="transparent"
         />
       </TouchableOpacity>
     </View>
@@ -28,12 +31,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff',
-    borderBottomWidth: 0.8,
-    borderWidth: 0.3,
-    borderBottomColor: '#CBCDD0',
+    backgroundColor: theme.light_grey,
+    //borderBottomWidth: 0.8,
+    //borderWidth: 0.3,
+    //borderBottomColor: '#CBCDD0',
     height: 50,
-   // borderRadius: 5,
+    borderRadius: 10,
     margin: 10,
     paddingLeft: 5
   },
@@ -48,7 +51,8 @@ const styles = StyleSheet.create({
   },
   text:{
     flex: 1, 
-    paddingLeft: 15,
+    paddingLeft: 1,
     fontSize: 16
+
   }
 });

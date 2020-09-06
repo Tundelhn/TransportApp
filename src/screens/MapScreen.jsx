@@ -23,15 +23,15 @@ export default function WelcomScreen() {
                 <Text style={Styles.tests}>Where To?</Text>
             </View>
             <View>
-              <InputText style={Styles.search}/>
+              <InputText style={Styles.search} placeholder='Enter Address' image={require("../../assets/search.png") } />
             </View>
             <View style={Styles.work}>
               <View style={Styles.home}>
-              <Image source={require("../../assets/house.png")} />
+              <Image source={require("../../assets/home1.png")} />
               <Text style={Styles.homes}> Add Home</Text>
               </View>
               <View style={Styles.home}>
-              <Image source={require("../../assets/case1.png")} />
+              <Image source={require("../../assets/work.png")} />
               <Text style={Styles.homes}> Work Address</Text>
               </View>
             </View>
