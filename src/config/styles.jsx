@@ -17,14 +17,16 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 18,
     fontFamily: Platform.os === "android" ? "Roboto" : "Avenir",
+    width: "98%"
   },
   textInput: {
     borderRadius: 5,
-    width: "90%",
+    width: "93%",
     borderWidth: 0.5,
     padding: 15,
-    marginTop: 150,
-    marginLeft: 10,
+    marginTop: 30,
+    backgroundColor: "#f4f4f4",
+    marginLeft: 15,
     marginRight: 10,
   },
 

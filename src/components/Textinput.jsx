@@ -15,10 +15,10 @@ export default function Textinput({ ...otherProps }) {
 const styles = StyleSheet.create({
   container: {},
   inputContainer: {
-    backgroundColor: "#f4f4f4",
+    backgroundColor: "red",
     borderRadius: 5,
-    padding: 20,
-    marginTop: 35,
+    padding: 10,
+    marginTop: 5,
     width: "90%",
     left: 10,
     marginVertical: 5,
