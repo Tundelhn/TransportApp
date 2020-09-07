@@ -49,7 +49,7 @@ export default function WelcomScreen() {
                 <Text style={Styles.tests}>Where To?</Text>
             </View>
             <View>
-            <InputText style={Styles.search} placeholder='Enter Address' image={require("../../assets/search.png") } />
+            <InputText style={Styles.search} placeholder='Enter Address' image={require("../../assets/search.png")} />
             </View>
             <View style={Styles.work}>
               <View style={Styles.home}>

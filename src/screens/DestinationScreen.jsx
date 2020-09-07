@@ -5,6 +5,7 @@ import InputText from "../components/InputText";
 import colors from "../components/colors";
 import Styles from "../config/styles"
 import AppButton from "../components/AppButton";
+import ListItemSeperator from "../components/ListItemSeperator";
 
 
 export default function WelcomScreen() {
@@ -15,16 +16,16 @@ export default function WelcomScreen() {
                     <Image source={require("../../assets/back.png")}  />
                 </TouchableOpacity>
             </View>
-            <View >
+            <View style={Styles.seperator}>
             <View style={Styles.Icon1}>
-                <View style={{paddingTop:30}}>
+                <View style={{paddingTop:20}}>
                 <Image source={require("../../assets/fieldCircle.png")}  />
                 </View>
                 <View style={{width: 300, alignItems: 'center'}}>
                 <InputText  placeholder= 'Enter Address'   />
                 </View>
             </View>
-            <View style={{paddingLeft:38, paddingTop:47}}>
+            <View style={{paddingLeft:38, paddingTop:35}}>
             <Image source={require("../../assets/dotLine.png")}  />
             </View>
             <View style={Styles.Icon2}>
@@ -36,7 +37,7 @@ export default function WelcomScreen() {
               </View>
             </View>
             </View>
-            
+            {/* <ListItemSeperator style={Styles.seperator} /> */}
             <View style={Styles.work}>
               <View style={Styles.home}>
               <Image source={require("../../assets/home1.png")} />

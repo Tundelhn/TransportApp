@@ -3,8 +3,6 @@ import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import colors from "./colors";
 import AppText from "./AppText";
 
-
-
 export default function Card({ avatar, head, image, title, onPress }) {
   return (
     <View style={styles.container}>
