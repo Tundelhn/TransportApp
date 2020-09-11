@@ -76,14 +76,13 @@ export default function DestinationPartScreen() {
                 <View style={{paddingTop: 20}}>
                   <InputText  placeholder= 'Festac'  image={require("../../assets/fieldCircle.png")}/>
                 </View>
-              {/* <View >
-                <Image source={require("../../assets/dotted.png")}  />
-              </View> */}
-              <View style={{paddingTop: 50}}>
-                <InputText  placeholder= 'lagos'  image={require("../../assets/inlineCircle.png")}/>
+              <View style={{paddingTop: 45}}>
+                <InputText  placeholder= 'Ikeja'  image={require("../../assets/inlineCircle.png")}/>
              </View>
+             <View style={Styles.lineJoin}>
+                <Image source={require("../../assets/dotted.png")}  />
+              </View>
             </View>
-            {/* <ListItemSeperator /> */}
             <View>
           <FlatList
             data={local}

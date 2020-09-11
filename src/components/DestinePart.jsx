@@ -11,9 +11,9 @@ export default function DestinePart({begin, onPress, time, destin, image, motor,
     <View style={Styles.containerr}>
         <TouchableOpacity style={Styles.cardd} onPress={onPress}>
             <View style={Styles.detaill}>
-                <Text style={styles.begin}>{begin}</Text>
-                <Text style={styles.time}>{time}</Text>
-                <Text style={styles.destin}>{destin}</Text>
+                <Text style={Styles.begins}>{begin}</Text>
+                <Text style={Styles.tim}>{time}</Text>
+                <Text style={Styles.destin}>{destin}</Text>
             </View>
             <View style={Styles.detaills}>
              <View style={Styles.imagee}>

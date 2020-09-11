@@ -12,6 +12,9 @@ const styles = StyleSheet.create({
     color: colors.gray,
     fontSize: 15
   },
+  begins:{
+    fontWeight:'bold'
+  },
   booking:{
     flexDirection: 'row',
     justifyContent: "center",
@@ -23,6 +26,19 @@ const styles = StyleSheet.create({
     fontSize: 16,
     paddingLeft:5
   },
+  cardd:{
+    backgroundColor: colors.white,
+    flexDirection: 'column',
+    height:90,
+    width:320,
+    marginLeft:20,
+    borderRadius:10,
+    borderWidth: 5,
+    borderColor: colors.light_grey,
+  },
+  containerr:{
+    backgroundColor: colors.light_grey,  
+  },
   customBtn: {
     fontSize: 20,
     fontWeight: '400',
@@ -31,7 +47,6 @@ const styles = StyleSheet.create({
     color: "black",
     marginLeft:25,
     borderRadius: 20,
-   
 },
   customBtn1: {
     marginLeft:25,
@@ -51,25 +66,35 @@ customText:{
   marginHorizontal: 30,
   alignItems: "center",
 },
-  text: {
-    fontSize: 18,
-    fontFamily: Platform.os === "android" ? "Roboto" : "Avenir",
-  },
-    Icon: {
+detaill:{
+  marginLeft:10,
+  paddingRight:20,
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+},
+detaills:{
+  paddingRight:40,
+  paddingBottom: 15,
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+},
+ destin:{
+      fontWeight:'bold'
+    },
+Icon: {
     flexDirection: 'column',
     justifyContent: "center",
     marginTop: 13,
     height: 5,
     borderRadius: 5
     },
-    Icon1: {
+Icon1: {
     flexDirection: 'row',
     justifyContent: "center",
     marginTop: 10,
     height: 5,
     borderRadius: 5,
-    left: 9,
-    
+    left: 9,  
     },
     Icon2: {
     flexDirection: 'row',
@@ -89,10 +114,28 @@ customText:{
     borderRadius: 5,
     left: 10
     },
+    imagee:{
+      paddingTop: 20,
+      flexDirection:'row'
+    },
+    image:{
+      paddingTop: 6,
+      paddingRight:10,
+      flexDirection:'column'
+    },
+    images:{
+      paddingTop: 40,
+      paddingRight:1,
+      flexDirection:'column'
+    },
     Img: {
       marginTop: 50,
       flexDirection: 'row',
       justifyContent: "space-around",
+    },
+    lineJoin:{
+      paddingLeft: 50, 
+      paddingTop:5
     },
     home:{
       flexDirection: 'row',
@@ -111,9 +154,8 @@ customText:{
       borderBottomWidth: 3,
       paddingBottom:70,
       borderColor: theme.light_grey
-      
     },
-    test:{
+     test:{
       fontSize: 14,
       color: colors.gray
     },
@@ -125,6 +167,10 @@ customText:{
       fontSize: 23,
       fontWeight: "bold"
     },
+  text:{
+      fontSize: 18,
+      fontFamily: Platform.os === "android" ? "Roboto" : "Avenir",
+    },
     word:{
       fontSize: 19,
       fontWeight: "bold",
@@ -134,46 +180,6 @@ customText:{
     paddingTop: 20,
     paddingLeft: 15 
    },
-   cardd:{
-    backgroundColor: colors.white,
-    flexDirection: 'column',
-    height:90,
-    width:320,
-    marginLeft:20,
-    borderRadius:10,
-    borderWidth: 5,
-    borderColor: colors.light_grey,
-  },
-  containerr:{
-    backgroundColor: colors.light_grey,  
-  },
-  detaill:{
-    marginLeft:10,
-    paddingRight:20,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  detaills:{
-    paddingRight:40,
-    paddingBottom: 15,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  imagee:{
-    paddingTop: 20,
-    flexDirection:'row'
-  },
-  image:{
-    paddingTop: 6,
-    paddingRight:10,
-    flexDirection:'column'
-  },
-  images:{
-    paddingTop: 40,
-    paddingRight:1,
-    flexDirection:'column'
-  }
-
 });
 
 export default styles;
