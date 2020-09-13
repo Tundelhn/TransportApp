@@ -9,8 +9,15 @@ import {
 } from "react-native";
 import AppButton from "./src/components/AppButton";
 import MobileAuthScreen from "./src/screens/MobileAuthScreen";
+import WelcomeScreen from "./src/screens/WelcomeScreen";
+import MapScreen from "./src/screens/MapScreen";
+import DestinationScreen from "./src/screens/DestinationScreen";
+import DestinationPartScreen from "./src/screens/DestinationPartScreen";
+import OfferTripScreen from "./src/screens/OfferTripScreen";
+//import {H} from "./src/screens/HomeScreen";
+
 export default function App() {
-  return <MobileAuthScreen / > ;
+  return <OfferTripScreen /> ;
 }
 
 const styles = StyleSheet.create({
