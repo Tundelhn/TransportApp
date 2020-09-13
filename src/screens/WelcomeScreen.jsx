@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, Image,  FlatList, TouchableOpacity, SafeAreaVie
 import AppText from "../components/AppText";
 import InputText from "../components/InputText";
 import Card from "../components/Card";
-import colors from "../components/colors";
 import ListItemSeperator from "../components/ListItemSeperator";
 import { MaterialCommunityIcons, Ionicons } from "@expo/vector-icons";
 import Styles from "../config/styles"

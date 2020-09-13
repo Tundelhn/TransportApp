@@ -1,19 +1,17 @@
 import React from "react";
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
-import colors from "./colors";
+
 import AppText from "./AppText";
 import Styles from "../config/styles"
-
-
 
 export default function DestinePart({begin, onPress, time, destin, image, motor, arrow, seat, not, naira}) {
   return (
     <View style={Styles.containerr}>
         <TouchableOpacity style={Styles.cardd} onPress={onPress}>
             <View style={Styles.detaill}>
-                <Text style={styles.begin}>{begin}</Text>
-                <Text style={styles.time}>{time}</Text>
-                <Text style={styles.destin}>{destin}</Text>
+                <Text style={Styles.begin}>{begin}</Text>
+                <Text style={Styles.time}>{time}</Text>
+                <Text style={Styles.destin}>{destin}</Text>
             </View>
             <View style={Styles.detaills}>
              <View style={Styles.imagee}>
