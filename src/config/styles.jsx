@@ -192,6 +192,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: "space-around",
   },
+  lineJoin:{
+    paddingLeft: 49, 
+    paddingTop:5
+  },
   M: {
     width: 300,
     height: 40, borderRadius: 2,
@@ -237,6 +241,12 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     top: 20
   },
+  ri:{
+    flex:1, 
+    backgroundColor:colors.light_grey, 
+    justifyContent:'center', 
+    alignItems:'center' 
+  },
   search: {
     paddingLeft: 50
   },
@@ -244,6 +254,8 @@ const styles = StyleSheet.create({
     borderBottomWidth: 3,
     paddingBottom: 70,
     borderColor: theme.light_grey,
+    right: 7
+    //justifyContent:'center'
   },
   sy: {
     width: 135, borderWidth: 1,
