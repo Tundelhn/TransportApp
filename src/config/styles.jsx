@@ -32,6 +32,15 @@ const styles = StyleSheet.create({
     right: 140,
     justifyContent: 'center'
   },
+  calender:{
+    top:10, 
+    right:10, 
+    borderWidth: 1,height:50, 
+    borderStartColor:colors.black, 
+    borderColor:colors.light_grey, 
+    padding:2,
+    backgroundColor:colors.light_grey
+   },
   cardx: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -161,6 +170,14 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     left: 10
   },
+  Icon4: {
+    flexDirection: 'row',
+    justifyContent: "center",
+    alignContent: 'center',
+    height: 5,
+    borderRadius: 5,
+    left: 5
+  },
   Icon3: {
     flexDirection: 'row',
     justifyContent: "center",
@@ -254,6 +271,13 @@ const styles = StyleSheet.create({
     borderBottomWidth: 3,
     paddingBottom: 70,
     borderColor: theme.light_grey,
+    right: 7
+    //justifyContent:'center'
+  },
+  seperator1: {
+    
+    paddingBottom: 70,
+    
     right: 7
     //justifyContent:'center'
   },

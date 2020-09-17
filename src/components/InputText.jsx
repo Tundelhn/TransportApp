@@ -4,13 +4,13 @@ import Styles from "../config/styles";
 import theme from "../config/theme";
 
 
-export default function InText({placeholder, image, size}) {
+export default function InText({placeholder, image, size, textStyle, boxStyle}) {
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.SectionStyle}>
+      <TouchableOpacity style={{...styles.SectionStyle, ...boxStyle}}>
         <Image source={image}  style={styles.ImageStyle} />
         <TextInput
-                style={styles.text}
+                style={{...styles.text, ...textStyle}}
                 placeholder={placeholder}
                 size={size}
                 //underlineColorAndroid="transparent"

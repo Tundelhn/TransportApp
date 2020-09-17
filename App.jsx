@@ -15,10 +15,11 @@ import DestinationScreen from "./src/screens/DestinationScreen";
 import DestinationPartScreen from "./src/screens/DestinationPartScreen";
 import NoRideScreen from "./src/screens/NoRideScreen";
 import OfferTripScreen from "./src/screens/OfferTripScreen";
+import ScheduleTripScreen from "./src/screens/ScheduleTripScreen";
 //import {H} from "./src/screens/HomeScreen";
 
 export default function App() {
-  return <NoRideScreen /> ;
+  return <ScheduleTripScreen /> ;
 }
 
 const styles = StyleSheet.create({
