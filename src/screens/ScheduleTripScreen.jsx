@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, StyleSheet, Image,  TouchableOpacity, SafeAreaView, TextInput } from 'react-native';
+import React, { useState }from 'react';
+import { View, Text, StyleSheet, Image, Modal,  TouchableOpacity, SafeAreaView, TextInput } from 'react-native';
 import Styles from "../config/styles";
 import colors from "../components/colors";
 import InputText from "../components/InputText";
@@ -8,9 +8,56 @@ import AppButton from "../components/AppButton";
 
 
 export default function ScheduleTripScreen() {
-  
+    const [modalVisible, setModalVisible] = useState(false);
   return (
     <SafeAreaView style={Styles.container}>
+    <Modal
+        animationType="slide"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={() => {
+          Alert.alert("Modal has been closed.");
+        }}
+      >
+        <View style={Styles.centeredView}>
+          <View style={Styles.modalView}>
+            <Text style={Styles.Trip}>Trip Summary</Text>
+            <View style={Styles.V}>
+              <Text>From</Text>
+              <TextInput placeholder=' Festac, Lagos' style={Styles.M} />
+            </View>
+            <View style={Styles.flexDirection}>
+              <Text>To</Text>
+              <TextInput placeholder=' Iyano, Lagos' style={Styles.M} />
+            </View>
+            <View style={{ flexDirection: 'row', bottom: 20 }}>
+              <View style={Styles.Touch}>
+                <Text>Price</Text>
+                <TextInput placeholder='  N500' style={Styles.sy} />
+              </View>
+              <View style={{ flexDirection: 'column', left: 143, }}>
+                <Text>Date</Text>
+                <TextInput placeholder='  5/27/15 12:00' style={Styles.sy} />
+              </View>
+              <View style={Styles.c}>
+                <Text style={{ color: colors.gray }}>Are you sure you want to schedule this trip</Text>
+              </View>
+            </View>
+            <View style={Styles.wit}>
+              <AppButton buttonStyle={{   width:130, backgroundColor: colors.blue, }} title='Confirm' />
+              <AppButton
+                buttonStyle={{ width: 130, backgroundColor: colors.white, color: "#000", borderWidth: 1, borderColor: colors.blue }}
+                onPress={() => { setModalVisible(!modalVisible) }}
+                title='Cancel'
+                textStyle={{
+                  color: colors.blue
+                }}
+              />
+
+            </View>
+          </View>
+        </View>
+      </Modal>
       <View style={Styles.view}>
         <TouchableOpacity style={Styles.backward}>
           <Image source={require("../../assets/back.png")} />
@@ -88,6 +135,7 @@ export default function ScheduleTripScreen() {
                 textStyle={{
                   color: colors.white
                 }}
+                onPress={() => setModalVisible(true)}
               />
         </View>
       </View>
