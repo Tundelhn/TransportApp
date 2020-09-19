@@ -1,20 +1,19 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import Heading from "../components/Heading";
-import Title from "../components/Title";
+import Title2 from "../components/Title2";
 import StartTrip from "../components/StartTrip";
 import StartTripp from "../components/StartTripp";
-import StartTrippp from "../components/StartTrippp";
+import colors from "../components/colors";
 
-
-export default function ScheduledScreen() {
+export default function SecondScheduledScreen() {
   return (
     <View style={styles.container}>
      <Heading />
-     <Title />
+     <Title2 />
      <StartTrip />
      <StartTripp />
-     <StartTrippp />
+     <View style={{backgroundColor:colors.ash, height:240, top: 20}}></View>
     </View>
   );
 }
@@ -22,6 +21,7 @@ export default function ScheduledScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+   // backgroundColor:colors.gray
   
   },
 });

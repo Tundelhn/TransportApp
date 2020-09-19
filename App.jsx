@@ -17,10 +17,11 @@ import NoRideScreen from "./src/screens/NoRideScreen";
 import OfferTripScreen from "./src/screens/OfferTripScreen";
 import ScheduleTripScreen from "./src/screens/ScheduleTripScreen";
 import ScheduledScreen from "./src/screens/ScheduledScreen";
+import SecondScheduledScreen from "./src/screens/SecondScheduledScreen";
 
 
 export default function App() {
-  return <ScheduledScreen /> ;
+  return <SecondScheduledScreen /> ;
 }
 
 const styles = StyleSheet.create({

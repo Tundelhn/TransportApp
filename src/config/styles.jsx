@@ -87,7 +87,8 @@ const styles = StyleSheet.create({
   borderBottomWidth:5,
   borderBottomColor:colors.light_grey,
   height:160,
-  width:320
+  width:320,
+  backgroundColor:colors.white
 
   },
   containe: {

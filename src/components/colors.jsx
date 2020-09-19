@@ -11,7 +11,7 @@ export default {
     gray: '#9C9EA0',
     sky: '#83ADD3',
     blue: '#0A84FF',
-    greyn:'#AEAEB2',
+    ash: '#EFEFF4',
   };
 
   
