@@ -25,7 +25,7 @@ export default function StartTrippp() {
                     <Text style={{top:32, color:colors.gray}}>N400</Text>  
             </View>
             <View style={Styles.Wit}>
-              <AppButton buttonStyle={{  top:0, height:50, width:130,backgroundColor: colors.greyn }}    onPress={() =>console.log('Go ahead')} title='Completed' />
+              <AppButton buttonStyle={{  top:0, height:50, width:130,backgroundColor: colors.gray }}    onPress={() =>console.log('Go ahead')} title='Completed' />
               <AppButton
                 buttonStyle={{ top:0, height:50, width:130, backgroundColor: colors.white, borderWidth: 1, borderColor: colors.gray }}
                 onPress={() =>console.log('Cancel')}

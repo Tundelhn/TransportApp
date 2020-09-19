@@ -18,10 +18,11 @@ import OfferTripScreen from "./src/screens/OfferTripScreen";
 import ScheduleTripScreen from "./src/screens/ScheduleTripScreen";
 import ScheduledScreen from "./src/screens/ScheduledScreen";
 import SecondScheduledScreen from "./src/screens/SecondScheduledScreen";
+import ThirdScheduledScreen from "./src/screens/ThirdScheduledScreen";
 
 
 export default function App() {
-  return <SecondScheduledScreen /> ;
+  return <ThirdScheduledScreen /> ;
 }
 
 const styles = StyleSheet.create({

@@ -84,8 +84,8 @@ const styles = StyleSheet.create({
   Containerr: {
  top:25,
   alignSelf:'center',
-  borderBottomWidth:5,
-  borderBottomColor:colors.light_grey,
+  borderBottomWidth:6,
+  borderBottomColor:colors.ash,
   height:160,
   width:320,
   backgroundColor:colors.white
