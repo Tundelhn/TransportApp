@@ -81,6 +81,15 @@ const styles = StyleSheet.create({
   containerr: {
     backgroundColor: colors.light_grey,
   },
+  Containerr: {
+ top:25,
+  alignSelf:'center',
+  borderBottomWidth:5,
+  borderBottomColor:colors.light_grey,
+  height:160,
+  width:320
+
+  },
   containe: {
     backgroundColor: colors.white,
   },
@@ -122,6 +131,7 @@ const styles = StyleSheet.create({
     paddingBottom: 15,
     flexDirection: 'row',
     justifyContent: 'space-between',
+    color:colors.light_grey
   },
   detailx: {
     paddingRight: 110
@@ -267,6 +277,7 @@ const styles = StyleSheet.create({
   search: {
     paddingLeft: 50
   },
+  Seat:{paddingRight:50, color:colors.gray},
   seperator: {
     borderBottomWidth: 3,
     paddingBottom: 70,
@@ -274,10 +285,8 @@ const styles = StyleSheet.create({
     right: 7
     //justifyContent:'center'
   },
-  seperator1: {
-    
+  seperator1: { 
     paddingBottom: 70,
-    
     right: 7
     //justifyContent:'center'
   },
@@ -310,6 +319,15 @@ const styles = StyleSheet.create({
     fontSize: 23,
     fontWeight: "bold"
   },
+  title:{
+    flexDirection:'row',
+    justifyContent:'space-around',
+    top: 20,
+    borderBottomWidth:2,
+    color:colors.light_grey,
+    borderBottomColor:colors.light_grey,
+    fontWeight:'bold' 
+  },
   Touch:{ 
     flexDirection: 'column', 
     left: 116, 
@@ -321,6 +339,13 @@ const styles = StyleSheet.create({
    top: 20, width: "100%", 
    justifyContent: "space-between",
    borderRadius: 3 
+  },
+  Wit: { 
+    flexDirection: 'row',
+    width: "100%", 
+   justifyContent: "space-around",
+   borderRadius: 3,
+   bottom:10
   },
   word: {
     fontSize: 19,
@@ -335,6 +360,7 @@ const styles = StyleSheet.create({
   view: {
     marginTop: 50,
     flexDirection: 'row',
+    left:5
   }
 });
 

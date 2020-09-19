@@ -32,44 +32,4 @@ export default function DestinePart({begin, onPress, time, destin, image, motor,
   );
 }
 
-const styles = StyleSheet.create({
-  // cardd:{
-  //   backgroundColor: colors.white,
-  //   flexDirection: 'column',
-  //   height:90,
-  //   width:320,
-  //   marginLeft:20,
-  //   borderRadius:10,
-  //   borderWidth: 5,
-  //   borderColor: colors.light_grey,
-  // },
-  // containerr:{
-  //   backgroundColor: colors.light_grey,  
-  // },
-  // detaill:{
-  //   marginLeft:10,
-  //   paddingRight:20,
-  //   flexDirection: 'row',
-  //   justifyContent: 'space-between',
-  // },
-  // detaills:{
-  //   paddingRight:40,
-  //   flexDirection: 'row',
-  //   justifyContent: 'space-between',
-  // },
-  // imagee:{
-  //   paddingTop: 20,
-  //   flexDirection:'row'
-  // },
-  // image:{
-  //   paddingTop: 10,
-  //   paddingRight:20,
-  //   flexDirection:'column'
-  // },
-  // images:{
-  //   paddingTop: 40,
-  //   paddingRight:1,
-  //   flexDirection:'column'
-  // }
-
-})
+const styles = StyleSheet.create({})
