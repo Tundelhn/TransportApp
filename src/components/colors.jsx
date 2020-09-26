@@ -12,6 +12,8 @@ export default {
     sky: '#83ADD3',
     blue: '#0A84FF',
     ash: '#EFEFF4',
+    orange: '#FFCC2F'
+
   };
 
   

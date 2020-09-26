@@ -4,8 +4,8 @@ import AppText from "../components/AppText";
 import InputText from "../components/InputText";
 import Card from "../components/Card";
 import ListItemSeperator from "../components/ListItemSeperator";
-import { MaterialCommunityIcons, Ionicons } from "@expo/vector-icons";
 import Styles from "../config/styles"
+import Heading from "../components/Heading";
 
 const event = [
   {
@@ -25,18 +25,12 @@ const event = [
 export default function WelcomScreen() {
     return (
         <SafeAreaView style={styles.container}>
-            <View style={Styles.Img}>
-                <TouchableOpacity style={Styles.Icon}>
-                <Image source={require("../../assets/line2.png")}  />
-                    <View style={{padding: 3, paddingRight: 200, right:3 }}>
-                    <Image source={require("../../assets/line2.png")}  />
-                    </View>
-                    <View style={{paddingBottom: 3 }}>
-                    <Image source={require("../../assets/line2.png")}  />
-                    </View>
+            <View style={Styles.Imgg}>
+                <TouchableOpacity style={Styles.icon}>
+                <Image source={require("../../assets/Menu.png")}  />
                 </TouchableOpacity>
                 <TouchableOpacity>
-                    <Image source={require("../../assets/Alert.png")} />
+                    <Image source={require("../../assets/Alert.png")} style={{marginRight:15}} />
                 </TouchableOpacity>
             </View>
             <View style={styles.text}>
@@ -50,7 +44,7 @@ export default function WelcomScreen() {
             <View>
             <InputText style={Styles.search} placeholder='Enter Address' image={require("../../assets/search.png")} />
             </View>
-            <View style={Styles.work}>
+            <View style={{paddingTop: 60, paddingLeft: 15}}>
               <View style={Styles.home}>
               <Image source={require("../../assets/home.png")} />
               <Text style={Styles.homes}> Add Home</Text>
@@ -96,13 +90,11 @@ export default function WelcomScreen() {
 }
 
 const styles = StyleSheet.create({
-    
     container: {
         flex: 1,
       },
-  
     text:{
-      paddingTop: 30,
+      paddingTop: 20,
       paddingLeft: 25
     },
     texts:{

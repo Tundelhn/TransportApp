@@ -1,24 +1,17 @@
 import React from "react";
-import { StyleSheet, Text, View, TextInput, Image, TouchableOpacity } from "react-native";
+import {  Text, View, TouchableOpacity } from "react-native";
 import Styles from "../config/styles";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import colors from "./colors";
 
-export default function Heading({image, title}) {
+export default function Heading({icon, title, onPress}) {
   return (
     <View style={Styles.view}>
-        <TouchableOpacity style={Styles.backward}>
-        <Image source={require("../../assets/Menu.png")} />
+        <TouchableOpacity style={Styles.backward} onPress={onPress}>
+        {icon && (<MaterialCommunityIcons name={icon} size={20}  color={colors.black} style={{bottom:2}} />)}
         </TouchableOpacity>
-        <Text style={Styles.Offer}>Scheduled</Text>
+        <Text style={Styles.Offer}>{title}</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  conatiner: {
-    marginTop: 10,
-    width: "100%",
-    flexDirection: "row",
-    justifyContent: "center",
-  },
- 
-});

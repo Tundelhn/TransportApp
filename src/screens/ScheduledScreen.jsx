@@ -10,7 +10,7 @@ import StartTrippp from "../components/StartTrippp";
 export default function ScheduledScreen() {
   return (
     <View style={styles.container}>
-     <Heading />
+    <Heading  image={require("../../assets/Menu.png")}  title='Schedule' />
      <Title />
      <StartTrip />
      <StartTripp />

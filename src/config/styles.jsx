@@ -27,6 +27,13 @@ const styles = StyleSheet.create({
     fontSize: 16,
     paddingLeft: 5
   },
+  but:{
+    flexDirection:'row',
+    
+    marginLeft:90,
+    //bottom:20,
+    //paddingTop:10
+  },
   c: {
     top: 50,
     right: 140,
@@ -78,6 +85,19 @@ const styles = StyleSheet.create({
     flex: 1,
     shadowColor: colors.primary
   },
+  con:{
+    flexDirection:'row', 
+    alignSelf: 'center', 
+  paddingTop:15,
+  width: 250,
+  marginRight:30
+},
+Con:{
+  flexDirection:'row', 
+alignSelf: 'center', 
+width: 250,
+marginRight:40
+},
   containerr: {
     backgroundColor: colors.light_grey,
   },
@@ -89,6 +109,17 @@ const styles = StyleSheet.create({
   height:160,
   width:320,
   backgroundColor:colors.white
+
+  },
+  Contain: {
+ marginTop:25,
+  alignSelf:'center',
+  borderWidth:3,
+  borderColor:colors.ash,
+  borderRadius: 10,
+  //height:90,
+  width:340,
+  //backgroundColor:colors.white
 
   },
   containe: {
@@ -163,6 +194,10 @@ const styles = StyleSheet.create({
     height: 5,
     borderRadius: 5
   },
+  icon: {
+    marginTop: 13,
+    marginLeft:30
+  },
   Icon1: {
     flexDirection: 'row',
     justifyContent: "center",
@@ -220,6 +255,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: "space-around",
   },
+  Imgg: {
+    marginTop: 40,
+    flexDirection: 'row',
+    justifyContent: "space-between",
+  },
   lineJoin:{
     paddingLeft: 49, 
     paddingTop:5
@@ -268,6 +308,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 5,
     top: 20
+  },
+  req:{
+    marginTop:10,
+    borderWidth:3,
+    borderColor:colors.ash,
+    borderRadius: 10,
+    width:340,
+    alignSelf:'center',
   },
   ri:{
     flex:1, 
@@ -335,6 +383,11 @@ const styles = StyleSheet.create({
     alignContent: 'center', 
   },
   Trip: { bottom: 50, fontWeight: 'bold', fontSize: 18 },
+  up:{
+    flexDirection:'row',
+     justifyContent:'space-around',
+     paddingTop:10,
+    },
   wit: { 
     flexDirection: 'row',
    top: 20, width: "100%", 

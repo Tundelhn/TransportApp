@@ -9,7 +9,7 @@ import colors from "../components/colors";
 export default function SecondScheduledScreen() {
   return (
     <View style={styles.container}>
-     <Heading />
+    <Heading  image={require("../../assets/Menu.png")}  title='Schedule' />
      <Title2 />
      <StartTrip />
      <StartTripp />
