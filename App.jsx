@@ -20,10 +20,12 @@ import ScheduledScreen from "./src/screens/ScheduledScreen";
 import SecondScheduledScreen from "./src/screens/SecondScheduledScreen";
 import ThirdScheduledScreen from "./src/screens/ThirdScheduledScreen";
 import RequestScreen from "./src/screens/RequestScreen";
+import NotificationScreen from "./src/screens/NotificationScreen";
+import AppNavigator from "./src/navigation/AppNavigator";
 
 
 export default function App() {
-  return <RequestScreen /> ;
+  return <AppNavigator /> ;
 }
 
 const styles = StyleSheet.create({

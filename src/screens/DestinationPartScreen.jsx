@@ -63,11 +63,11 @@ const local = [
     }, 
   ];
 
-export default function DestinationPartScreen() {
+export default function DestinationPartScreen({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <View style={Styles.Img}>
-                <TouchableOpacity style={{paddingRight:300}}>
+                <TouchableOpacity style={{paddingRight:300}} onPress={() => navigation.navigate("Home")}>
                     <Image source={require("../../assets/back.png")}  />
                 </TouchableOpacity>
             </View>

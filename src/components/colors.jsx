@@ -12,7 +12,13 @@ export default {
     sky: '#83ADD3',
     blue: '#0A84FF',
     ash: '#EFEFF4',
-    orange: '#FFCC2F'
+    orange: '#FFCC2F',
+    newBlack: '#253855',
+    newGray: '#586F94',
+    lightGray: '#8E8E93'
+
+
+
 
   };
 

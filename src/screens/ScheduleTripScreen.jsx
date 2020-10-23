@@ -7,7 +7,7 @@ import ApText from '../components/ApText';
 import AppButton from "../components/AppButton";
 
 
-export default function ScheduleTripScreen() {
+export default function ScheduleTripScreen({ navigation }) {
     const [modalVisible, setModalVisible] = useState(false);
   return (
     <SafeAreaView style={Styles.container}>
@@ -44,7 +44,9 @@ export default function ScheduleTripScreen() {
               </View>
             </View>
             <View style={Styles.wit}>
-              <AppButton buttonStyle={{   width:130, backgroundColor: colors.blue, }} title='Confirm' />
+              <AppButton buttonStyle={{   width:130, backgroundColor: colors.blue, }} title='Confirm'
+                  onPress={() => navigation.navigate("Explore")}
+               />
               <AppButton
                 buttonStyle={{ width: 130, backgroundColor: colors.white, color: "#000", borderWidth: 1, borderColor: colors.blue }}
                 onPress={() => { setModalVisible(!modalVisible) }}
@@ -119,7 +121,7 @@ export default function ScheduleTripScreen() {
              <View style={{top: 180}}>
                 <ApText textStyle={{right: 135 }}>Price</ApText>
                     <View style={Styles.Icon4}>
-                        <Image source={require("../../assets/cash.png")}  style={{top:15, left: 15}} />
+                        <Image source={require("../../assets/cash.png")}  style={{top:15, left: 15}}  />
                         <InputText  placeholder= 'Enter Fee' boxStyle={{height:50, width: 280, right:10}} />
                     </View> 
              </View>

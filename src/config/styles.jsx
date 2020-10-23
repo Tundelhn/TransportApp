@@ -1,8 +1,9 @@
 import React from "react";
 import { StyleSheet, Text, View, Platform } from "react-native";
 import colors from "../components/colors";
-import theme from "../config/theme";
-import Constants from "expo-constants"
+import theme from "./theme";
+import { wp, hp } from "./Responsive";
+//import Constants from "expo-constants"
 
 const styles = StyleSheet.create({
   address: {
@@ -11,6 +12,13 @@ const styles = StyleSheet.create({
     paddingLeft: 25,
     color: colors.gray,
     fontSize: 15
+  },
+  aka:{
+    color:colors.gray,
+    height:hp(60),
+    alignSelf:"flex-start",
+    width:wp(294),
+    left:wp(14)
   },
   backward: {
     paddingLeft: 20,
@@ -119,8 +127,6 @@ marginRight:40
   borderRadius: 10,
   //height:90,
   width:340,
-  //backgroundColor:colors.white
-
   },
   containe: {
     backgroundColor: colors.white,
@@ -177,6 +183,16 @@ marginRight:40
     right: 1,
     bottom: 30
   },
+  font:{
+    color:colors.gray,
+    left:wp(8),
+    paddingTop:hp(5)
+  },
+  from:{
+  fontWeight:'600', 
+  paddingTop:hp(5),
+  paddingLeft:wp(13)
+},
   home: {
     flexDirection: 'row',
     padding: 10
@@ -205,7 +221,6 @@ marginRight:40
     height: 5,
     borderRadius: 5,
     left: 9,
-
   },
   Icon2: {
     flexDirection: 'row',
@@ -250,6 +265,12 @@ marginRight:40
   imagex: {
     paddingTop: 20,
   },
+  imageView:{
+  flexDirection:'row', 
+  //justifyContent:'space-between', 
+  paddingTop:12,
+  paddingLeft:wp(16)
+},
   Img: {
     marginTop: 50,
     flexDirection: 'row',
@@ -259,6 +280,19 @@ marginRight:40
     marginTop: 40,
     flexDirection: 'row',
     justifyContent: "space-between",
+  },
+  info:{
+    borderWidth:3,
+    borderColor:colors.ash,
+    height:121
+  },
+  letter:{
+    //flexDirection:'row',
+   paddingTop:hp(8),
+   alignSelf:"flex-start",
+
+   paddingLeft:wp(16),
+  // justifyContent:'space-around'
   },
   lineJoin:{
     paddingLeft: 49, 
@@ -287,8 +321,35 @@ marginRight:40
     shadowRadius: 3.84,
     elevation: 20
   },
-  Offer: { left: 45, fontWeight: 'bold' },
-
+  name:{
+  fontWeight:'600', 
+  height:hp(20),
+  paddingLeft:wp(13)
+},
+  Note:{
+    flex:1,
+  },
+  Notes:{
+    marginTop:hp(16)
+  },
+  note:{
+  flexDirection:'row', 
+  justifyContent:'space-between', 
+  borderBottomWidth:1, 
+  borderBottomColor:colors.ash, 
+  height:hp(30),
+},
+  Offer: { 
+    left: 45, 
+    fontWeight: 'bold',
+    top:hp(4)
+  },
+  ojoText:{
+    alignSelf:'flex-start', 
+    fontWeight:'bold' ,
+    left:wp(16),
+    paddingTop:hp(12)
+    },
   prex: {
     backgroundColor: colors.blue,
     width: 80,
@@ -309,6 +370,12 @@ marginRight:40
     borderRadius: 5,
     top: 20
   },
+  place:{
+  flexDirection:'row', 
+  top:24,
+  left:wp(34),
+  color:colors.gray
+},
   req:{
     marginTop:10,
     borderWidth:3,
@@ -317,11 +384,23 @@ marginRight:40
     width:340,
     alignSelf:'center',
   },
+  request:{
+    color:colors.gray,
+    left:wp(8),
+    fontSize:13
+  },
   ri:{
     flex:1, 
     backgroundColor:colors.light_grey, 
     justifyContent:'center', 
     alignItems:'center' 
+  },
+  ride:{
+    color:colors.gray, 
+    left:wp(16), 
+    paddingTop:wp(5),
+    height:hp(78),
+    fontSize: 14
   },
   search: {
     paddingLeft: 50
@@ -332,12 +411,10 @@ marginRight:40
     paddingBottom: 70,
     borderColor: theme.light_grey,
     right: 7
-    //justifyContent:'center'
   },
   seperator1: { 
     paddingBottom: 70,
     right: 7
-    //justifyContent:'center'
   },
   sy: {
     width: 135, borderWidth: 1,
@@ -367,6 +444,13 @@ marginRight:40
   texts: {
     fontSize: 23,
     fontWeight: "bold"
+  },
+  time:{
+    right:wp(16), 
+    color:colors.lightGray,  
+    paddingTop:wp(5),
+    height:hp(78),
+    fontSize: 14
   },
   title:{
     flexDirection:'row',
@@ -401,6 +485,13 @@ marginRight:40
    borderRadius: 3,
    bottom:10
   },
+  ward:{
+    left:wp(67),
+  },
+  wards:{
+    left:wp(328),
+    bottom:hp(63)
+  },
   word: {
     fontSize: 19,
     fontWeight: "bold",
@@ -412,9 +503,9 @@ marginRight:40
   },
   V: { flexDirection: 'column', right: 1, bottom: 30, },
   view: {
-    marginTop: 50,
+    marginTop: hp(58),
     flexDirection: 'row',
-    left:5
+    left:wp(16)
   }
 });
 
